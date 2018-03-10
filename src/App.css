@@ -62,3 +62,30 @@
   font-size: 10px;
   color: #4f4f4f;
 }
+
+/* skills*/
+
+.skill-title {
+  font-size: 24px;
+}
+
+.skill-title span {
+  color: #0567eb;
+}
+
+.skill-items {
+  padding: 0 30px;
+  font-size: 12px;
+}
+
+.skill-itmes-row {
+  display: flex;
+  justify-content: center;
+}
+
+.skill-item {
+  color: #f3f3f3;
+  background: #0567eb;
+  padding: 5px;
+  border-radius: 5px;
+}
