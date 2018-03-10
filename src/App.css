@@ -1,28 +1,64 @@
 .App {
   text-align: center;
+  font-family: "Anton", sans-serif;
+  background: #f3f3f3;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+/* header */
+
+.my-header {
+  background: #6fcf97;
+  height: 50px;
+}
+.section {
+  height: 50px;
+  width: 70%;
+  display: flex;
+  font-size: 12px;
+  color: #4f4f4f;
+  justify-content: space-around;
+  line-height: 50px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.section-item:hover {
+  color: #f3f3f3;
 }
 
-.App-title {
-  font-size: 1.5em;
+.section-item.active-color {
+  color: #f3f3f3;
 }
 
-.App-intro {
-  font-size: large;
+/* About me */
+.about-wrap {
+  padding: 0 30px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.about-title {
+  font-size: 24px;
+}
+
+.about-wrap span {
+  color: #6fcf97;
+}
+
+.sub-title {
+  color: #4f4f4f;
+  font-size: 14px;
+}
+
+.about-main {
+  font-size: 12px;
+  text-align: left;
+}
+
+.icons-section {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icons-section a {
+  width: 25px;
+  font-size: 10px;
+  color: #4f4f4f;
 }
