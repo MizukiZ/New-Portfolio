@@ -2,7 +2,7 @@ import React from "react"
 
 function Header() {
   return (
-    <nav className="navbar navbar-expand-sm my-header">
+    <nav className="navbar navbar-expand-sm sticky-top my-header">
       <a className="navbar-brand" href="#">
         <img
           src="/placeholder.png"

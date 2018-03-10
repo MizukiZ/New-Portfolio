@@ -20,18 +20,11 @@ function AboutMe() {
       </div>
 
       <div className="icons-section mb-2">
-        <a
-          href="https://github.com/MizukiZ"
-          style={{ marginRight: "20px" }}
-          target="_blank"
-        >
+        <a href="https://github.com/MizukiZ" style={{ marginRight: "20px" }}>
           <img src="github.png" height="25px" width="25px" />
           GitHub
         </a>
-        <a
-          href="https://www.linkedin.com/in/mizuki-zenta-6684a2154/"
-          target="_blank"
-        >
+        <a href="https://www.linkedin.com/in/mizuki-zenta-6684a2154/">
           <img src="linkedin.png" height="25px" width="25px" />
           LinkedIn
         </a>
