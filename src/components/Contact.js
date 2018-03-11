@@ -8,45 +8,26 @@ function Contact({ position }) {
           <span>C</span>ontact
         </div>
 
-        <form name="contactform" method="POST" data-netlify="true">
-          <div className="contact_form">
-            <div id="your">
-              <input
-                type="text"
-                name="name"
-                placeholder="Your name"
-                className="form-control"
-              />
-              <input
-                type="text"
-                name="email"
-                placeholder="Your email address"
-                className="form-control"
-              />
-              <input
-                type="text"
-                name="phone"
-                placeholder="Your phone number"
-                className="form-control"
-              />
-            </div>
-            <textarea
-              name="message"
-              placeholder="Your message"
-              className="form-control mb-2"
-              rows="8"
-              cols="50"
-            />
-
-            <div id="submit">
-              <input
-                id="submit_button"
-                type="submit"
-                name="submit"
-                value="Send"
-              />
-            </div>
-          </div>
+        <form method="post">
+          <input type="hidden" name="form-name" value="contact" />
+          <p>
+            <label>
+              Your Name: <input type="text" name="name" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your Email: <input type="email" name="email" />
+            </label>
+          </p>
+          <p>
+            <label>
+              Message: <textarea name="message" />
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
         </form>
       </div>
     </div>
