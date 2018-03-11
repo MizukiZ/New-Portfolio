@@ -27,7 +27,7 @@
 /* About me */
 .about-wrap {
   padding: 0 30px;
-  height: 100vh;
+  height: calc(100vh - 50px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,7 +65,7 @@
 
 /* skills*/
 .skill-wrap {
-  height: 100vh;
+  height: calc(100vh - 50px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,7 +99,7 @@
 /* project */
 
 .project-wrap {
-  min-height: 100vh;
+  min-height: calc(100vh - 50px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,7 +145,7 @@
 
 /* contact */
 .contact-wrap {
-  height: 100vh;
+  height: calc(100vh - 50px);
   display: flex;
   justify-content: center;
   align-items: center;
