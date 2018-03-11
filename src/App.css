@@ -150,7 +150,7 @@
 
 .project-item {
   width: 90%;
-  height: 200px;
+  height: calc(170px + 10vw);
   position: relative;
   border: 1px solid #f2994a;
 }
@@ -227,5 +227,14 @@
 @media (min-width: 576px) {
   .section-item:hover {
     color: #f3f3f3;
+  }
+}
+
+@media (min-width: 768px) {
+  .project-item {
+    width: 45%;
+    height: 200px;
+    position: relative;
+    border: 1px solid #f2994a;
   }
 }
