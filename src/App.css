@@ -47,6 +47,7 @@
 }
 
 .about-wrap span {
+  -webkit-text-stroke: 0.5px #000;
   color: #6fcf97;
 }
 
@@ -86,6 +87,7 @@
 }
 
 .skill-title span {
+  -webkit-text-stroke: 0.5px #000;
   color: #0567eb;
 }
 
@@ -125,6 +127,7 @@
 }
 
 .project-wrap span {
+  -webkit-text-stroke: 0.5px #000;
   color: #f2994a;
 }
 
@@ -142,7 +145,7 @@
   border: 1px solid #f2994a;
 }
 
-.project-item:before {
+.project-item a:before {
   content: "";
   position: absolute;
   top: 0;
@@ -150,7 +153,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .project-item img {
@@ -184,6 +187,7 @@
 }
 
 .contact-wrap span {
+  -webkit-text-stroke: 0.5px #000;
   color: #f2c94c;
 }
 
