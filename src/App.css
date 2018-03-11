@@ -20,10 +20,6 @@
   line-height: 50px;
 }
 
-.section-item:hover {
-  color: #f3f3f3;
-}
-
 .section-item.active-color {
   color: #f3f3f3;
 }
@@ -32,6 +28,9 @@
 .about-wrap {
   padding: 0 30px;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-title {
@@ -67,6 +66,9 @@
 /* skills*/
 .skill-wrap {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .skill-title {
@@ -98,6 +100,9 @@
 
 .project-wrap {
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-title {
@@ -141,6 +146,9 @@
 /* contact */
 .contact-wrap {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-title {
@@ -155,4 +163,12 @@
 
 .contact_form textarea {
   font-size: 12px;
+}
+
+/* responsive design */
+
+@media (min-width: 576px) {
+  .section-item:hover {
+    color: #f3f3f3;
+  }
 }
