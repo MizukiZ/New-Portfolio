@@ -23,11 +23,11 @@ function activeSection(
     return "active-color"
   } else if (
     position >= projectTop &&
-    position < contactTop &&
+    position < contactTop - 2 &&
     section === "project"
   ) {
     return "active-color"
-  } else if (position > contactTop && section === "contact") {
+  } else if (position > contactTop - 2 && section === "contact") {
     return "active-color"
   }
 }

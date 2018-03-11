@@ -8,26 +8,31 @@ function Contact({ position }) {
           <span>C</span>ontact
         </div>
 
-        <form method="post">
+        <form method="post" className="contactForm">
           <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label>
-              Your Name: <input type="text" name="name" />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your Email: <input type="email" name="email" />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message: <textarea name="message" />
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
+
+          <input
+            type="text"
+            name="name"
+            className="form-control"
+            placeholder="Your Name"
+          />
+
+          <input
+            type="email"
+            name="email"
+            className="form-control"
+            placeholder="Your email"
+          />
+          <textarea
+            name="message"
+            className="form-control mb-2"
+            placeholder="Your message"
+            cols={50}
+            rows={10}
+          />
+
+          <button type="submit">Send</button>
         </form>
       </div>
     </div>
