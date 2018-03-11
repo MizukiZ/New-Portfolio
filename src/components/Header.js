@@ -35,13 +35,13 @@ function activeSection(
 function Header({ position, aboutTop, skillTop, projectTop, contactTop }) {
   return (
     <nav className="navbar navbar-expand-sm sticky-top my-header">
-      <a className="navbar-brand">
+      <div>
         <img
-          src="/placeholder.png"
+          src="/mizuki.JPG"
           alt="profileImage"
-          style={{ width: "55px" }}
+          className="rounded-circle myImage"
         />
-      </a>
+      </div>
 
       <div className="section">
         <p

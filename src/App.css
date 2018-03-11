@@ -20,6 +20,15 @@
   line-height: 50px;
 }
 
+.myImage {
+  width: 80px;
+  height: 80px;
+  border: 4px solid #6fcf97;
+  position: relative;
+  top: 15px;
+  right: 2vw;
+}
+
 .section-item.active-color {
   color: #f3f3f3;
 }
