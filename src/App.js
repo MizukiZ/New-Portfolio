@@ -16,11 +16,27 @@ class App extends Component {
     aboutTop: null,
     skillTop: null,
     projectTop: null,
-    contactTop: null
+    contactTop: null,
+    buttonDisable: false
+  }
+
+  buttonDisableToggle = () => {
+    this.setState({ buttonDisable: true }, () => {
+      setTimeout(() => {
+        this.setState({ buttonDisable: false })
+      }, 1500)
+    })
   }
 
   render() {
-    const { position, aboutTop, skillTop, projectTop, contactTop } = this.state
+    const {
+      position,
+      aboutTop,
+      skillTop,
+      projectTop,
+      contactTop,
+      buttonDisable
+    } = this.state
     return (
       <div className="App">
         <Header
@@ -29,6 +45,8 @@ class App extends Component {
           skillTop={skillTop}
           projectTop={projectTop}
           contactTop={contactTop}
+          onButtonDisable={this.buttonDisableToggle}
+          buttonDisable={buttonDisable}
         />
         <AboutMe />
         <Skill />

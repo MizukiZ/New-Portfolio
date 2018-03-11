@@ -32,7 +32,15 @@ function activeSection(
   }
 }
 
-function Header({ position, aboutTop, skillTop, projectTop, contactTop }) {
+function Header({
+  position,
+  aboutTop,
+  skillTop,
+  projectTop,
+  contactTop,
+  onButtonDisable,
+  buttonDisable
+}) {
   return (
     <div className="sticky-top my-header">
       <div>
@@ -54,7 +62,10 @@ function Header({ position, aboutTop, skillTop, projectTop, contactTop }) {
             "about"
           )}`}
           onClick={e => {
-            onClickJump("about")
+            if (!buttonDisable) {
+              onClickJump("about")
+              onButtonDisable()
+            }
           }}
         >
           About me
@@ -69,7 +80,10 @@ function Header({ position, aboutTop, skillTop, projectTop, contactTop }) {
             "skill"
           )}`}
           onClick={e => {
-            onClickJump("skill")
+            if (!buttonDisable) {
+              onClickJump("skill")
+              onButtonDisable()
+            }
           }}
         >
           Skills
@@ -84,7 +98,10 @@ function Header({ position, aboutTop, skillTop, projectTop, contactTop }) {
             "project"
           )}`}
           onClick={e => {
-            onClickJump("project")
+            if (!buttonDisable) {
+              onClickJump("project")
+              onButtonDisable()
+            }
           }}
         >
           Project
@@ -99,7 +116,10 @@ function Header({ position, aboutTop, skillTop, projectTop, contactTop }) {
             "contact"
           )}`}
           onClick={e => {
-            onClickJump("contact")
+            if (!buttonDisable) {
+              onClickJump("contact")
+              onButtonDisable()
+            }
           }}
         >
           Contact
