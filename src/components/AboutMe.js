@@ -21,17 +21,12 @@ function AboutMe({ position }) {
         </div>
 
         <div className="icons-section mb-2">
-          <a href="https://github.com/MizukiZ" style={{ marginRight: "30px" }}>
-            <img src="github.png" alt="gitLogo" height="25px" width="25px" />
+          <a href="https://github.com/MizukiZ">
+            <img src="github.png" alt="gitLogo" />
             GitHub
           </a>
           <a href="https://www.linkedin.com/in/mizuki-zenta-6684a2154/">
-            <img
-              src="linkedin.png"
-              alt="linkedInLogo"
-              height="25px"
-              width="25px"
-            />
+            <img src="linkedin.png" alt="linkedInLogo" />
             LinkedIn
           </a>
         </div>

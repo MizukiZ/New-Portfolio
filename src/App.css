@@ -9,23 +9,27 @@
 .my-header {
   background: #6fcf97;
   height: 50px;
+  display: flex;
+  justify-content: start;
 }
+
 .section {
   height: 50px;
-  width: 70%;
+  width: 90%;
   display: flex;
-  font-size: 12px;
+  font-size: calc(6px + 1.5vw);
   color: #4f4f4f;
   justify-content: space-around;
   line-height: 50px;
 }
 
 .myImage {
-  width: 80px;
-  height: 80px;
+  width: calc(74px + 2vw);
+  height: calc(74px + 2vw);
   border: 4px solid #6fcf97;
   position: relative;
   top: 15px;
+  left: calc(9px + 1vw);
 }
 
 .section-item.active-color {
@@ -35,7 +39,7 @@
 /* About me */
 .about-wrap {
   padding: 0 30px;
-  height: calc(100vh - 50px);
+  min-height: calc(100vh - 50px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +47,7 @@
 }
 
 .about-title {
-  font-size: 24px;
+  font-size: calc(18px + 1.5vw);
 }
 
 .about-wrap span {
@@ -53,11 +57,11 @@
 
 .sub-title {
   color: #8f8f8f;
-  font-size: 14px;
+  font-size: calc(8px + 1.5vw);
 }
 
 .about-main {
-  font-size: 12px;
+  font-size: calc(6px + 1.5vw);
   text-align: left;
 }
 
@@ -68,14 +72,20 @@
 }
 
 .icons-section a {
-  width: 25px;
-  font-size: 10px;
+  width: calc(19px + 1.5vw);
+  font-size: calc(4px + 1.5vw);
   color: #4f4f4f;
+  margin-right: calc(24px + 1.5vw);
+}
+
+.icons-section img {
+  width: calc(19px + 1.5vw);
+  height: calc(19px + 1.5vw);
 }
 
 /* skills*/
 .skill-wrap {
-  height: calc(100vh - 50px);
+  min-height: calc(100vh - 50px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,7 +93,7 @@
 }
 
 .skill-title {
-  font-size: 24px;
+  font-size: calc(18px + 1.5vw);
 }
 
 .skill-title span {
@@ -93,7 +103,7 @@
 
 .skill-items {
   padding: 0 30px;
-  font-size: 12px;
+  font-size: calc(6px + 1.5vw);
 }
 
 .skill-itmes-row {
@@ -123,7 +133,7 @@
 }
 
 .project-title {
-  font-size: 24px;
+  font-size: calc(18px + 1.5vw);
 }
 
 .project-wrap span {
@@ -163,7 +173,7 @@
 
 .project-item p {
   color: #f3f3f3;
-  font-size: 11px;
+  font-size: calc(5px + 1.5vw);
   position: absolute;
   top: 70%;
   left: 50%;
@@ -175,15 +185,16 @@
 }
 
 /* contact */
+
 .contact-wrap {
-  height: calc(100vh - 50px);
+  min-height: calc(100vh - 50px);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .contact-title {
-  font-size: 24px;
+  font-size: calc(18px + 1.5vw);
 }
 
 .contact-wrap span {
@@ -194,11 +205,11 @@
 .contactForm input {
   width: 200px;
   margin: 5px auto;
-  font-size: 11px;
+  font-size: calc(5px + 1.5vw);
 }
 
 .contactForm textarea {
-  font-size: 12px;
+  font-size: calc(6px + 1.5vw);
 }
 
 .contactForm button {

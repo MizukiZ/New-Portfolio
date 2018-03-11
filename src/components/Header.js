@@ -34,7 +34,7 @@ function activeSection(
 
 function Header({ position, aboutTop, skillTop, projectTop, contactTop }) {
   return (
-    <nav className="navbar navbar-expand-sm sticky-top my-header">
+    <div className="sticky-top my-header">
       <div>
         <img
           src="/mizuki.JPG"
@@ -105,7 +105,7 @@ function Header({ position, aboutTop, skillTop, projectTop, contactTop }) {
           Contact
         </p>
       </div>
-    </nav>
+    </div>
   )
 }
 
