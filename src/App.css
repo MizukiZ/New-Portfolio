@@ -31,6 +31,7 @@
 /* About me */
 .about-wrap {
   padding: 0 30px;
+  height: 100vh;
 }
 
 .about-title {
@@ -64,6 +65,9 @@
 }
 
 /* skills*/
+.skill-wrap {
+  height: 100vh;
+}
 
 .skill-title {
   font-size: 24px;
@@ -91,6 +95,10 @@
 }
 
 /* project */
+
+.project-wrap {
+  min-height: 100vh;
+}
 
 .project-title {
   font-size: 24px;
@@ -128,4 +136,23 @@
   transform: translate(-50%, -50%);
   margin: 0;
   padding: 0;
+}
+
+/* contact */
+.contact-wrap {
+  height: 100vh;
+}
+
+.contact-title {
+  font-size: 24px;
+}
+
+.contact_form input {
+  width: 200px;
+  margin: 5px auto;
+  font-size: 11px;
+}
+
+.contact_form textarea {
+  font-size: 12px;
 }

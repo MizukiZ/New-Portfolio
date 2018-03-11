@@ -1,6 +1,6 @@
 import React from "react"
 
-function AboutMe() {
+function AboutMe({ position }) {
   return (
     <div className="about-wrap text-center m-2">
       <div className="about-title">
