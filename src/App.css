@@ -31,6 +31,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid #4f4f4f;
 }
 
 .about-title {
@@ -42,7 +43,7 @@
 }
 
 .sub-title {
-  color: #4f4f4f;
+  color: #8f8f8f;
   font-size: 14px;
 }
 
@@ -69,6 +70,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid #4f4f4f;
 }
 
 .skill-title {
@@ -103,6 +105,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid #4f4f4f;
+}
+
+.project-subWrap {
+  margin: 40px 0;
 }
 
 .project-title {
@@ -124,6 +131,7 @@
   width: 90%;
   height: 200px;
   position: relative;
+  border: 1px solid #f2994a;
 }
 
 .project-item img {
@@ -155,6 +163,10 @@
   font-size: 24px;
 }
 
+.contact-wrap span {
+  color: #f2c94c;
+}
+
 .contactForm input {
   width: 200px;
   margin: 5px auto;
@@ -166,10 +178,8 @@
 }
 
 .contactForm button {
-  background: #6fcf97;
-  font-size: 11px;
+  background: #f2c94c;
   float: right;
-  padding: 2px 7px;
 }
 
 /* responsive design */

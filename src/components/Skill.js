@@ -9,7 +9,7 @@ function Skill() {
     internship: ["WordPress", "PHP"]
   }
   return (
-    <div className="skill-wrap text-center m-2">
+    <div className="skill-wrap text-center">
       <div className="skill-subWtap">
         <div className="skill-title">
           <span>S</span>kills

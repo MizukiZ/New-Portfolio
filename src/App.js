@@ -31,11 +31,8 @@ class App extends Component {
           contactTop={contactTop}
         />
         <AboutMe />
-        <hr className="mt-3" />
         <Skill />
-        <hr className="mt-3" />
         <Project />
-        <hr className="mt-3" />
         <Contact />
       </div>
     )
@@ -54,20 +51,16 @@ class App extends Component {
     const bodyRect = document.body.getBoundingClientRect()
     const aboutTop =
       document.querySelector(".about-wrap").getBoundingClientRect().top -
-      bodyRect.top -
-      50
+      bodyRect.top
     const skillTop =
       document.querySelector(".skill-wrap").getBoundingClientRect().top -
-      bodyRect.top -
-      50
+      bodyRect.top
     const projectTop =
       document.querySelector(".project-wrap").getBoundingClientRect().top -
-      bodyRect.top -
-      50
+      bodyRect.top
     const contactTop =
       document.querySelector(".contact-wrap").getBoundingClientRect().top -
-      bodyRect.top -
-      50
+      bodyRect.top
 
     this.setState({ aboutTop, skillTop, projectTop, contactTop })
   }

@@ -2,13 +2,13 @@ import React from "react"
 
 function AboutMe({ position }) {
   return (
-    <div className="about-wrap text-center m-2">
+    <div className="about-wrap text-center ">
       <div className="about-subWrap">
         <div className="about-title">
           <span>Mizuki</span> Zenta
         </div>
 
-        <div className="sub-title mb-2">
+        <div className="sub-title mb-3">
           Passion: <span>Coding</span>, Borad Sports
         </div>
 
@@ -21,7 +21,7 @@ function AboutMe({ position }) {
         </div>
 
         <div className="icons-section mb-2">
-          <a href="https://github.com/MizukiZ" style={{ marginRight: "20px" }}>
+          <a href="https://github.com/MizukiZ" style={{ marginRight: "30px" }}>
             <img src="github.png" alt="gitLogo" height="25px" width="25px" />
             GitHub
           </a>

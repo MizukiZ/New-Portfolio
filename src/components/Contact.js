@@ -4,9 +4,10 @@ function Contact({ position }) {
   return (
     <div className="contact-wrap text-center ">
       <div className="contact-subWrap">
-        <div className="contact-title mb-3">
+        <div className="contact-title">
           <span>C</span>ontact
         </div>
+        <div className="sub-title mb-3">Feel free to contact me</div>
 
         <form method="post" className="contactForm">
           <input type="hidden" name="form-name" value="contact" />
@@ -32,7 +33,9 @@ function Contact({ position }) {
             rows={10}
           />
 
-          <button type="submit">Send</button>
+          <button type="submit" className="btn">
+            Send
+          </button>
         </form>
       </div>
     </div>

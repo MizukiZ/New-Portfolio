@@ -2,7 +2,7 @@ import React from "react"
 import jump from "jump.js"
 
 function onClickJump(place) {
-  jump(`.${place}-wrap`, { offset: -49 })
+  jump(`.${place}-wrap`, { offset: -50 })
 }
 
 function activeSection(
@@ -13,21 +13,21 @@ function activeSection(
   contactTop,
   section
 ) {
-  if (position < skillTop && section === "about") {
+  if (position < skillTop - 50 && section === "about") {
     return "active-color"
   } else if (
-    position >= skillTop &&
-    position < projectTop &&
+    position >= skillTop - 50 &&
+    position < projectTop - 50 &&
     section === "skill"
   ) {
     return "active-color"
   } else if (
-    position >= projectTop &&
-    position < contactTop - 2 &&
+    position >= projectTop - 50 &&
+    position < contactTop - 52 &&
     section === "project"
   ) {
     return "active-color"
-  } else if (position > contactTop - 2 && section === "contact") {
+  } else if (position > contactTop - 52 && section === "contact") {
     return "active-color"
   }
 }
