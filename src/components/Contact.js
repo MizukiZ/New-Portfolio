@@ -8,7 +8,7 @@ function Contact({ position }) {
           <span>C</span>ontact
         </div>
 
-        <form name="contactform" data-netlify="true">
+        <form name="contactform" method="POST" data-netlify="true">
           <div className="contact_form">
             <div id="your">
               <input
