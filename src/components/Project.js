@@ -14,7 +14,7 @@ function Project() {
         <div className="project-items-wrap">
           <div className="project-item mb-3">
             <a href="https://github.com/MizukiZ/Mottainai">
-              <img src="placeholder.png" alt="projectImg" />
+              <img src="mottainai.jpg" alt="projectImg" />
             </a>
             <p>
               Two side market place application built on{" "}
@@ -24,23 +24,21 @@ function Project() {
 
           <div className="project-item mb-3">
             <a href="https://github.com/MizukiZ/major-project-term3">
-              <img src="placeholder.png" alt="projectImg" />
+              <img src="tanto.jpg" alt="projectImg" />
             </a>
             <p>
               A store management application build on <span>React.js</span> for
               a real client (a knife shop)
-              <span />
             </p>
           </div>
 
           <div className="project-item mb-3">
             <a href="https://github.com/MizukiZ/cm-template">
-              <img src="placeholder.png" alt="projectImg" />
+              <img src="cmTemplate.jpg" alt="projectImg" />
             </a>
             <p>
               <span>WordPress plugin</span> application for an environment
               monitor device
-              <span />
             </p>
           </div>
         </div>
