@@ -35,7 +35,7 @@ function activeSection(
 function Header({ position, aboutTop, skillTop, projectTop, contactTop }) {
   return (
     <nav className="navbar navbar-expand-sm sticky-top my-header">
-      <a className="navbar-brand" href="#">
+      <a className="navbar-brand">
         <img
           src="/placeholder.png"
           alt="profileImage"

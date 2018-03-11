@@ -18,9 +18,13 @@ function Skill() {
         <div className="skill-items">
           {Object.keys(mySkills).map(key => {
             return (
-              <div className="skill-itmes-row mb-1">
+              <div className="skill-itmes-row mb-1" key={`${key}-row`}>
                 {mySkills[key].map((skill, i) => {
-                  return <div className="skill-item mr-2">{skill}</div>
+                  return (
+                    <div className="skill-item mr-2" key={`${key}-item-${i}`}>
+                      {skill}
+                    </div>
+                  )
                 })}
               </div>
             )
