@@ -1,8 +1,8 @@
 import React from "react"
 import jump from "jump.js"
 
-function onClickJump(place) {
-  jump(`.${place}-wrap`, { offset: -50 })
+function onClickJump(place, headerHeight) {
+  jump(`.${place}-wrap`, { offset: -headerHeight })
 }
 
 // section items list
@@ -19,29 +19,34 @@ function activeSection(
   skillTop,
   projectTop,
   contactTop,
-  section
+  section,
+  headerHeight
 ) {
-  if (position < skillTop - 50 && section === "about") {
+  if (position < skillTop - headerHeight && section === "about") {
     return "active-color"
   } else if (
-    position >= skillTop - 50 &&
-    position < projectTop - 50 &&
+    position >= skillTop - headerHeight &&
+    position < projectTop - headerHeight &&
     section === "skill"
   ) {
     return "active-color"
   } else if (
-    position >= projectTop - 50 &&
-    position < contactTop - 52 &&
+    position >= projectTop - headerHeight &&
+    position < contactTop - headerHeight - 2 &&
     section === "project"
   ) {
     return "active-color"
-  } else if (position > contactTop - 52 && section === "contact") {
+  } else if (
+    position > contactTop - headerHeight - 2 &&
+    section === "contact"
+  ) {
     return "active-color"
   }
 }
 
 function Header({
   position,
+  headerOffSet,
   aboutTop,
   skillTop,
   projectTop,
@@ -70,12 +75,13 @@ function Header({
                 skillTop,
                 projectTop,
                 contactTop,
-                section
+                section,
+                headerOffSet
               )}`}
               key={`header-${section}`}
               onClick={e => {
                 if (!buttonDisable) {
-                  onClickJump(section)
+                  onClickJump(section, headerOffSet)
                   onButtonDisable()
                 }
               }}

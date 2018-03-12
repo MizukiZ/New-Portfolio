@@ -1,11 +1,11 @@
 import React from "react"
 
-function Project({ screenHeight }) {
+function Project({ screenHeight, headerOffSet }) {
   return (
     <div
       className="project-wrap"
       // when screen height is changed, change the size of wrapper element
-      style={{ minHeight: screenHeight - 50 }}
+      style={{ minHeight: screenHeight - headerOffSet }}
     >
       <div className="project-subWrap">
         <div className="project-title">

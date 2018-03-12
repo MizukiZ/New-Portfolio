@@ -1,6 +1,6 @@
 import React from "react"
 
-function Skill({ screenHeight }) {
+function Skill({ screenHeight, headerOffSet }) {
   // skills list
   const mySkills = {
     javaScript: ["JavaScript", "Node", "Express", "React"],
@@ -13,7 +13,7 @@ function Skill({ screenHeight }) {
     <div
       className="skill-wrap text-center"
       // when screen height is changed, change the size of wrapper element
-      style={{ minHeight: screenHeight - 50 }}
+      style={{ minHeight: screenHeight - headerOffSet }}
     >
       <div className="skill-subWtap">
         <div className="skill-title">

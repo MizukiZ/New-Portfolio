@@ -1,10 +1,10 @@
 import React from "react"
 
-function Contact({ position, screenHeight }) {
+function Contact({ position, screenHeight, headerOffSet }) {
   return (
     <div
       className="contact-wrap text-center "
-      style={{ minHeight: screenHeight - 50 }}
+      style={{ minHeight: screenHeight - headerOffSet }}
     >
       <div className="contact-subWrap">
         <div className="contact-title">

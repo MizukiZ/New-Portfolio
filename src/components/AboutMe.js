@@ -1,11 +1,11 @@
 import React from "react"
 
-function AboutMe({ position, screenHeight }) {
+function AboutMe({ position, screenHeight, headerOffSet }) {
   return (
     <div
       className="about-wrap text-center "
       // when screen height is changed, change the size of wrapper element
-      style={{ minHeight: screenHeight - 50 }}
+      style={{ minHeight: screenHeight - headerOffSet }}
     >
       <div className="about-subWrap">
         <div className="about-title">
