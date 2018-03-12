@@ -150,7 +150,7 @@
 
 .project-item {
   width: 90%;
-  height: calc(170px + 30vw);
+  height: calc(170px + 15vw);
   position: relative;
   border: 1px solid #f2994a;
 }
