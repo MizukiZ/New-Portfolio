@@ -1,6 +1,6 @@
 import React from "react"
 
-function Skill() {
+function Skill({ screenHeight }) {
   const mySkills = {
     javaScript: ["JavaScript", "Node", "Express", "React"],
     ruby: ["Ruby", "Ruby on Rails"],
@@ -9,7 +9,10 @@ function Skill() {
     internship: ["WordPress", "PHP"]
   }
   return (
-    <div className="skill-wrap text-center">
+    <div
+      className="skill-wrap text-center"
+      style={{ minHeight: screenHeight - 50 }}
+    >
       <div className="skill-subWtap">
         <div className="skill-title">
           <span>S</span>kills

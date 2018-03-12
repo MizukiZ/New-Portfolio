@@ -13,6 +13,7 @@ import "bootstrap/dist/css/bootstrap.css"
 class App extends Component {
   state = {
     position: 0,
+    screenHeight: null,
     aboutTop: null,
     skillTop: null,
     projectTop: null,
@@ -35,7 +36,8 @@ class App extends Component {
       skillTop,
       projectTop,
       contactTop,
-      buttonDisable
+      buttonDisable,
+      screenHeight
     } = this.state
     return (
       <div className="App">
@@ -48,10 +50,10 @@ class App extends Component {
           onButtonDisable={this.buttonDisableToggle}
           buttonDisable={buttonDisable}
         />
-        <AboutMe />
-        <Skill />
-        <Project />
-        <Contact />
+        <AboutMe screenHeight={screenHeight} />
+        <Skill screenHeight={screenHeight} />
+        <Project screenHeight={screenHeight} />
+        <Contact screenHeight={screenHeight} />
       </div>
     )
   }
@@ -66,19 +68,32 @@ class App extends Component {
       true
     )
 
+    window.addEventListener(
+      "resize",
+      e => {
+        const screenHeight = window.innerHeight
+        this.setState({ screenHeight })
+      },
+      true
+    )
+
     const bodyRect = document.body.getBoundingClientRect()
-    const aboutTop =
+    const aboutTop = Math.floor(
       document.querySelector(".about-wrap").getBoundingClientRect().top -
-      bodyRect.top
-    const skillTop =
+        bodyRect.top
+    )
+    const skillTop = Math.floor(
       document.querySelector(".skill-wrap").getBoundingClientRect().top -
-      bodyRect.top
-    const projectTop =
+        bodyRect.top
+    )
+    const projectTop = Math.floor(
       document.querySelector(".project-wrap").getBoundingClientRect().top -
-      bodyRect.top
-    const contactTop =
+        bodyRect.top
+    )
+    const contactTop = Math.floor(
       document.querySelector(".contact-wrap").getBoundingClientRect().top -
-      bodyRect.top
+        bodyRect.top
+    )
 
     this.setState({ aboutTop, skillTop, projectTop, contactTop })
   }

@@ -1,8 +1,11 @@
 import React from "react"
 
-function Contact({ position }) {
+function Contact({ position, screenHeight }) {
   return (
-    <div className="contact-wrap text-center ">
+    <div
+      className="contact-wrap text-center "
+      style={{ minHeight: screenHeight - 50 }}
+    >
       <div className="contact-subWrap">
         <div className="contact-title">
           <span>C</span>ontact

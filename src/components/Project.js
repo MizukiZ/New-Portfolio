@@ -1,8 +1,8 @@
 import React from "react"
 
-function Project() {
+function Project({ screenHeight }) {
   return (
-    <div className="project-wrap">
+    <div className="project-wrap" style={{ minHeight: screenHeight - 50 }}>
       <div className="project-subWrap">
         <div className="project-title">
           <span>P</span>rojects

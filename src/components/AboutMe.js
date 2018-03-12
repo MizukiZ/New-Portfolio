@@ -1,8 +1,11 @@
 import React from "react"
 
-function AboutMe({ position }) {
+function AboutMe({ position, screenHeight }) {
   return (
-    <div className="about-wrap text-center ">
+    <div
+      className="about-wrap text-center "
+      style={{ minHeight: screenHeight - 50 }}
+    >
       <div className="about-subWrap">
         <div className="about-title">
           <span>Mizuki</span> Zenta
