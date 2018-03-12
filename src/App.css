@@ -237,4 +237,9 @@
     position: relative;
     border: 1px solid #f2994a;
   }
+
+  .project-item:hover {
+    opacity: 0.8;
+    transition: 0.7s;
+  }
 }

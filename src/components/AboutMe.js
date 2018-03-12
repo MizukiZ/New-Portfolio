@@ -13,8 +13,7 @@ function AboutMe({ position, screenHeight, headerOffSet }) {
         </div>
 
         <div className="sub-title mb-3">
-          Experience: Did <span>internship</span> at IoT company called Mystic
-          Pants
+          Experience: <span>Internship</span> at IoT company called Mystic Pants
         </div>
 
         <div className="about-main mb-3">
