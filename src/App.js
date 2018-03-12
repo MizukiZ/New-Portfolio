@@ -88,7 +88,7 @@ class App extends Component {
       e => {
         // get scroll amount
         const yPosition = window.pageYOffset
-        this.setState({ position: yPosition })
+        this.setState({ position: Math.ceil(yPosition) })
       },
       true
     )

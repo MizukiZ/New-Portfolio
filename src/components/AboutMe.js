@@ -16,7 +16,7 @@ function AboutMe({ position, screenHeight, headerOffSet }) {
           Passion: <span>Coding</span>, Borad Sports
         </div>
 
-        <div className="about-main mb-2">
+        <div className="about-main mb-3">
           Hi ,I am from Japan. I majored in environmental science in University.
           Afterwards, I worked for a building air conditioner company as a field
           engineer for 3 years. Now I am in Australia to start my 2nd career as
