@@ -4,6 +4,7 @@ function AboutMe({ position, screenHeight }) {
   return (
     <div
       className="about-wrap text-center "
+      // when screen height is changed, change the size of wrapper element
       style={{ minHeight: screenHeight - 50 }}
     >
       <div className="about-subWrap">

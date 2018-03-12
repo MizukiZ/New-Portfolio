@@ -5,6 +5,14 @@ function onClickJump(place) {
   jump(`.${place}-wrap`, { offset: -50 })
 }
 
+// section items list
+const sectionObject = {
+  about: "About me",
+  skill: "Skills",
+  project: "Project",
+  contact: "Contact"
+}
+
 function activeSection(
   position,
   aboutTop,
@@ -52,78 +60,30 @@ function Header({
       </div>
 
       <div className="section">
-        <p
-          className={`section-item ${activeSection(
-            position,
-            aboutTop,
-            skillTop,
-            projectTop,
-            contactTop,
-            "about"
-          )}`}
-          onClick={e => {
-            if (!buttonDisable) {
-              onClickJump("about")
-              onButtonDisable()
-            }
-          }}
-        >
-          About me
-        </p>
-        <p
-          className={`section-item ${activeSection(
-            position,
-            aboutTop,
-            skillTop,
-            projectTop,
-            contactTop,
-            "skill"
-          )}`}
-          onClick={e => {
-            if (!buttonDisable) {
-              onClickJump("skill")
-              onButtonDisable()
-            }
-          }}
-        >
-          Skills
-        </p>
-        <p
-          className={`section-item ${activeSection(
-            position,
-            aboutTop,
-            skillTop,
-            projectTop,
-            contactTop,
-            "project"
-          )}`}
-          onClick={e => {
-            if (!buttonDisable) {
-              onClickJump("project")
-              onButtonDisable()
-            }
-          }}
-        >
-          Project
-        </p>
-        <p
-          className={`section-item ${activeSection(
-            position,
-            aboutTop,
-            skillTop,
-            projectTop,
-            contactTop,
-            "contact"
-          )}`}
-          onClick={e => {
-            if (!buttonDisable) {
-              onClickJump("contact")
-              onButtonDisable()
-            }
-          }}
-        >
-          Contact
-        </p>
+        {/* generate items buttons based on the sectionOject above */}
+        {Object.keys(sectionObject).map(section => {
+          return (
+            <p
+              className={`section-item ${activeSection(
+                position,
+                aboutTop,
+                skillTop,
+                projectTop,
+                contactTop,
+                section
+              )}`}
+              key={`header-${section}`}
+              onClick={e => {
+                if (!buttonDisable) {
+                  onClickJump(section)
+                  onButtonDisable()
+                }
+              }}
+            >
+              {sectionObject[section]}
+            </p>
+          )
+        })}
       </div>
     </div>
   )

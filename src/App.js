@@ -21,6 +21,7 @@ class App extends Component {
     buttonDisable: false
   }
 
+  // desable the buttons for 1.5s(prevention for mashing buttons)
   buttonDisableToggle = () => {
     this.setState({ buttonDisable: true }, () => {
       setTimeout(() => {
@@ -59,6 +60,7 @@ class App extends Component {
   }
 
   componentDidMount() {
+    // add event for window to detect scroll
     window.addEventListener(
       "scroll",
       e => {
@@ -68,6 +70,7 @@ class App extends Component {
       true
     )
 
+    // add event for window to detect size change(screen height)
     window.addEventListener(
       "resize",
       e => {
@@ -77,25 +80,18 @@ class App extends Component {
       true
     )
 
+    // detect the postions of each section
     const bodyRect = document.body.getBoundingClientRect()
-    const aboutTop = Math.floor(
-      document.querySelector(".about-wrap").getBoundingClientRect().top -
-        bodyRect.top
-    )
-    const skillTop = Math.floor(
-      document.querySelector(".skill-wrap").getBoundingClientRect().top -
-        bodyRect.top
-    )
-    const projectTop = Math.floor(
-      document.querySelector(".project-wrap").getBoundingClientRect().top -
-        bodyRect.top
-    )
-    const contactTop = Math.floor(
-      document.querySelector(".contact-wrap").getBoundingClientRect().top -
-        bodyRect.top
-    )
+    const sectionArray = ["about", "skill", "project", "contact"]
 
-    this.setState({ aboutTop, skillTop, projectTop, contactTop })
+    sectionArray.forEach(section => {
+      const target = document.querySelector(`.${section}-wrap`)
+      this.setState({
+        [`${section}Top`]: Math.floor(
+          target.getBoundingClientRect().top - bodyRect.top
+        )
+      })
+    })
   }
 }
 
