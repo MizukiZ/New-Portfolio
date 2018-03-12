@@ -13,15 +13,16 @@ function AboutMe({ position, screenHeight, headerOffSet }) {
         </div>
 
         <div className="sub-title mb-3">
-          Passion: <span>Coding</span>, Borad Sports
+          Experience: Did <span>internship</span> at IoT company called Mystic
+          Pants
         </div>
 
         <div className="about-main mb-3">
           Hi ,I am from Japan. I majored in environmental science in University.
           Afterwards, I worked for a building air conditioner company as a field
           engineer for 3 years. Now I am in Australia to start my 2nd career as
-          a developer and currently studying at AIT bachelor of IT(mobile apps)
-          in Melbourne.
+          a developer. I have finished diploma of IT at Coder Academy and
+          currently studying at AIT bachelor of IT(mobile apps) in Melbourne.
         </div>
 
         <div className="icons-section mb-2">

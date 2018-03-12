@@ -58,7 +58,7 @@ function Header({
     <div className="sticky-top my-header">
       <div>
         <img
-          src="/mizuki.JPG"
+          src="/profilePic.jpg"
           alt="profileImage"
           className="rounded-circle myImage"
         />
