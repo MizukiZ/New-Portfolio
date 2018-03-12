@@ -83,15 +83,15 @@ class App extends Component {
     })
 
     // add event for window to detect scroll
-    window.addEventListener(
-      "scroll",
-      e => {
-        // get scroll amount
-        const yPosition = window.pageYOffset
-        this.setState({ position: Math.ceil(yPosition) })
-      },
-      true
-    )
+    // window.addEventListener(
+    //   "scroll",
+    //   e => {
+    //     // get scroll amount
+    //     const yPosition = window.pageYOffset
+    //     this.setState({ position: Math.ceil(yPosition) })
+    //   },
+    //   true
+    // )
 
     // add event for window to detect size change(screen height)
     window.addEventListener(
