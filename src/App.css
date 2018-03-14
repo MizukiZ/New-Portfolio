@@ -32,6 +32,10 @@
   left: calc(6px + 1vw);
 }
 
+.section-item {
+  cursor: pointer;
+}
+
 .section-item.active-color {
   color: #f3f3f3;
 }
