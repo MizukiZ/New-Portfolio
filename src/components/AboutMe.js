@@ -25,13 +25,17 @@ function AboutMe({ position, screenHeight, headerOffSet }) {
         </div>
 
         <div className="icons-section mb-2">
-          <a href="https://github.com/MizukiZ">
-            <img src="github.png" alt="gitLogo" />
-            GitHub
+          <a href="/devResume.docx">
+            <img src="resume.png" alt="resumeLogo" />
+            Resume
           </a>
           <a href="https://www.linkedin.com/in/mizuki-zenta-6684a2154/">
             <img src="linkedin.png" alt="linkedInLogo" />
             LinkedIn
+          </a>
+          <a href="https://github.com/MizukiZ">
+            <img src="github.png" alt="gitLogo" />
+            GitHub
           </a>
         </div>
       </div>

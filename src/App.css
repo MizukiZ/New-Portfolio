@@ -76,10 +76,21 @@
 }
 
 .icons-section a {
-  width: calc(19px + 1.5vw);
+  width: calc(29px + 1.5vw);
   font-size: calc(4px + 1.5vw);
   color: #4f4f4f;
   margin-right: calc(30px + 1.5vw);
+}
+
+.icons-section a:last-child {
+  width: calc(29px + 1.5vw);
+  font-size: calc(4px + 1.5vw);
+  color: #4f4f4f;
+  margin: 0;
+}
+
+.icons-section a:hover {
+  text-decoration: none;
 }
 
 .icons-section img {
@@ -214,14 +225,15 @@
 .contactForm input {
   width: 200px;
   margin: 5px auto;
-  font-size: calc(5px + 1.5vw);
+  font-size: calc(5px + 1vw);
 }
 
 .contactForm textarea {
-  font-size: calc(6px + 1.5vw);
+  font-size: calc(6px + 1vw);
 }
 
 .contactForm button {
+  font-size: calc(5px + 1vw);
   background: #f2c94c;
   float: right;
 }
@@ -245,5 +257,9 @@
   .project-item:hover {
     opacity: 0.8;
     transition: 0.7s;
+  }
+
+  .icons-section a {
+    width: 70px;
   }
 }
