@@ -46,6 +46,15 @@ function Project({ screenHeight, headerOffSet }) {
               </p>
             </a>
           </div>
+
+          <div className="project-item mb-3">
+            <a href="https://github.com/MizukiZ/CaveAdventure">
+              <img src="caveAdventure.jpg" alt="projectImg" />
+              <p>
+                Android maze game Build on <span>Unity</span>
+              </p>
+            </a>
+          </div>
         </div>
       </div>
     </div>
