@@ -7,7 +7,8 @@ function Skill({ screenHeight, headerOffSet }) {
     ruby: ["Ruby", "Ruby on Rails"],
     html: ["HTML", "CSS", "Bootstrap"],
     dataBase: ["SQL", "NoSQL", "MongoDB", "PortgreSQL"],
-    internship: ["WordPress", "PHP"]
+    internship: ["WordPress", "PHP"],
+    AIT: ["JAVA", "C#", "Unity"]
   }
   return (
     <div

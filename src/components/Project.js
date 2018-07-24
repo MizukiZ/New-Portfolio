@@ -49,7 +49,7 @@ function Project({ screenHeight, headerOffSet }) {
 
           <div className="project-item mb-3">
             <a href="https://github.com/MizukiZ/CaveAdventure">
-              <img src="caveAdventure.jpg" alt="projectImg" />
+              <img src="caveAdventure.png" alt="projectImg" />
               <p>
                 Android maze game Build on <span>Unity</span>
               </p>
