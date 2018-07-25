@@ -13,6 +13,31 @@ const sectionObject = {
   contact: "Contact"
 }
 
+function colorSet(
+  position,
+  aboutTop,
+  skillTop,
+  projectTop,
+  contactTop,
+  headerHeight
+) {
+  if (position < skillTop - headerHeight) {
+    return "#6fcf97"
+  } else if (
+    position >= skillTop - headerHeight &&
+    position < projectTop - headerHeight
+  ) {
+    return "#0567eb"
+  } else if (
+    position >= projectTop - headerHeight &&
+    position < contactTop - headerHeight - 2
+  ) {
+    return "#f2994a"
+  } else if (position > contactTop - headerHeight - 2) {
+    return "#f2c94c"
+  }
+}
+
 function activeSection(
   position,
   aboutTop,
@@ -55,12 +80,34 @@ function Header({
   buttonDisable
 }) {
   return (
-    <div className="sticky-top my-header">
+    <div
+      className="sticky-top my-header"
+      style={{
+        backgroundColor: colorSet(
+          position,
+          aboutTop,
+          skillTop,
+          projectTop,
+          contactTop,
+          headerOffSet
+        )
+      }}
+    >
       <div>
         <img
           src="/profilePic.jpg"
           alt="profileImage"
           className="rounded-circle myImage"
+          style={{
+            borderColor: colorSet(
+              position,
+              aboutTop,
+              skillTop,
+              projectTop,
+              contactTop,
+              headerOffSet
+            )
+          }}
         />
       </div>
 
