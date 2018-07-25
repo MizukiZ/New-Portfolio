@@ -7,7 +7,7 @@ function AboutMe({ position, screenHeight, headerOffSet }) {
       // when screen height is changed, change the size of wrapper element
       style={{ minHeight: screenHeight - headerOffSet }}
     >
-      <div className="about-subWrap">
+      <div className="about-subWrap" style={{ maxWidth: 800 }}>
         <div className="about-title">
           <span>Mizuki</span> Zenta
         </div>
