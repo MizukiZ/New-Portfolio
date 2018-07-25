@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  font-family: "Anton", sans-serif;
+  font-family: "Titillium Web", sans-serif;
   background: #f3f3f3;
 }
 
@@ -67,6 +67,7 @@
 .about-main {
   font-size: calc(6px + 1.5vw);
   text-align: left;
+  font-family: "Domine", serif;
 }
 
 .icons-section {
@@ -91,6 +92,7 @@
 
 .icons-section a:hover {
   text-decoration: none;
+  color: #6fcf97;
 }
 
 .icons-section img {
@@ -157,6 +159,7 @@
 }
 
 .project-items-wrap {
+  font-family: "Domine", serif;
   display: flex;
   justify-content: space-around;
   width: 100%;
