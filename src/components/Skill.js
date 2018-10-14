@@ -6,9 +6,9 @@ function Skill({ screenHeight, headerOffSet }) {
     javaScript: ["JavaScript", "Node", "Express", "React"],
     ruby: ["Ruby", "Ruby on Rails"],
     html: ["HTML", "CSS", "Bootstrap"],
-    dataBase: ["SQL", "NoSQL", "MongoDB", "PortgreSQL"],
+    dataBase: ["SQL", "NoSQL", "MongoDB", "PortgreSQL", "Firebase"],
     internship: ["WordPress", "PHP"],
-    AIT: ["JAVA", "C#", "Unity"]
+    AIT: ["JAVA", "C#", "Unity", "Android studio", "ASP.NET"]
   }
   return (
     <div
@@ -18,7 +18,8 @@ function Skill({ screenHeight, headerOffSet }) {
     >
       <div className="skill-subWtap">
         <div className="skill-title">
-          <span>S</span>kills
+          <span>S</span>
+          kills
         </div>
 
         <div className="sub-title mb-3">Programming languages, tools</div>
