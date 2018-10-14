@@ -9,7 +9,8 @@ function Project({ screenHeight, headerOffSet }) {
     >
       <div className="project-subWrap">
         <div className="project-title">
-          <span>P</span>rojects
+          <span>P</span>
+          rojects
         </div>
 
         <div className="sub-title mb-3">
@@ -52,6 +53,16 @@ function Project({ screenHeight, headerOffSet }) {
               <img src="caveAdventure.png" alt="projectImg" />
               <p>
                 Android maze game Build on <span>Unity</span>
+              </p>
+            </a>
+          </div>
+
+          <div className="project-item mb-3">
+            <a href="https://github.com/MizukiZ/RentMeProject">
+              <img src="rentMeImage.jpg" alt="projectImg" />
+              <p>
+                Renting market android application Build on{" "}
+                <span>Android studio</span>
               </p>
             </a>
           </div>
