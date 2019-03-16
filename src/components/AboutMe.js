@@ -13,7 +13,12 @@ function AboutMe({ position, screenHeight, headerOffSet }) {
         </div>
 
         <div className="sub-title mb-3">
-          Experience: <span>Internship</span> at IoT company called Mystic Pants
+          Experience: <span>Soft Ware Developer</span>(currently) at{" "}
+          <span>
+            <a href="https://www.teamapp.com/" target="_blank">
+              Team App
+            </a>
+          </span>
         </div>
 
         <div className="about-main mb-3">
@@ -25,7 +30,7 @@ function AboutMe({ position, screenHeight, headerOffSet }) {
         </div>
 
         <div className="icons-section mb-2">
-          <a href="/devResume.docx">
+          <a href="/devResume.docx" download>
             <img src="resume.png" alt="resumeLogo" />
             Resume
           </a>

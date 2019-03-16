@@ -59,6 +59,11 @@
   color: #6fcf97;
 }
 
+.about-wrap span a {
+  -webkit-text-stroke: 0.5px #000;
+  color: #6fcf97;
+}
+
 .sub-title {
   color: #8f8f8f;
   font-size: calc(8px + 1.5vw);
