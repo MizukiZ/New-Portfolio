@@ -3,12 +3,12 @@ import React from "react"
 function Skill({ screenHeight, headerOffSet }) {
   // skills list
   const mySkills = {
-    javaScript: ["JavaScript", "Node", "Express", "React"],
+    javaScript: ["JavaScript", "Jquery", "Node", "Express", "React", "React Native", "Angular"],
     ruby: ["Ruby", "Ruby on Rails"],
     html: ["HTML", "CSS", "Bootstrap"],
-    dataBase: ["SQL", "NoSQL", "MongoDB", "PortgreSQL", "Firebase"],
+    dataBase: ["MySQL", "MongoDB", "PortgreSQL", "Firebase"],
     internship: ["WordPress", "PHP"],
-    AIT: ["JAVA", "C#", "Unity", "Android studio", "ASP.NET"]
+    AIT: ["JAVA", "C#", "Objective-C", "Unity", "Android studio", "Xcode", "ASP.NET", "Ionic"]
   }
   return (
     <div
@@ -16,7 +16,7 @@ function Skill({ screenHeight, headerOffSet }) {
       // when screen height is changed, change the size of wrapper element
       style={{ minHeight: screenHeight - headerOffSet }}
     >
-      <div className="skill-subWtap">
+      <div className="skill-subWrap">
         <div className="skill-title">
           <span>S</span>
           kills
