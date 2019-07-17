@@ -66,6 +66,16 @@ function Project({ screenHeight, headerOffSet }) {
               </p>
             </a>
           </div>
+
+          <div className="project-item mb-3">
+            <a href="https://github.com/MizukiZ/RentMeMVP">
+              <img src="ccProject.png" alt="projectImg" />
+              <p>
+                Currency converter application Build on{" "}
+                <span>React Native</span>
+              </p>
+            </a>
+          </div>
         </div>
       </div>
     </div>
