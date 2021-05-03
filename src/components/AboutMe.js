@@ -22,15 +22,13 @@ function AboutMe({ position, screenHeight, headerOffSet }) {
         </div>
 
         <div className="about-main mb-3">
-          Hi ,I am from Japan. I majored in environmental science in University.
-          Afterwards, I worked for a building air conditioner company as a field
-          engineer for 3 years. Now I am in Australia to start my 2nd career as
-          a developer. I have finished diploma of IT at Coder Academy and
-          currently studying at AIT bachelor of IT(mobile apps) in Melbourne.
+        Hi ,I am from Japan. I majored in environmental science in University. Afterwards, I worked for a building air conditioner company as a field engineer for 3 years.
+        I have started my 2nd career as a software developer here in Australia after completing bachelor of IT at Academy of Information Technology andI really love working as a developer.
+        I cannot stop my curiosity about IT because I know the joy of learning!   
         </div>
 
         <div className="icons-section mb-2">
-          <a href="/devResume.docx" download>
+          <a href="/devResume.pdf" download>
             <img src="resume.png" alt="resumeLogo" />
             Resume
           </a>
