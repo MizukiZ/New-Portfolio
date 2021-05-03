@@ -28,7 +28,7 @@ function AboutMe({ position, screenHeight, headerOffSet }) {
         </div>
 
         <div className="icons-section mb-2">
-          <a href="/devResume.pdf" download>
+          <a href="/public/devResume.pdf" download>
             <img src="resume.png" alt="resumeLogo" />
             Resume
           </a>

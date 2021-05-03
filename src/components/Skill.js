@@ -3,7 +3,7 @@ import React from "react"
 function Skill({ screenHeight, headerOffSet }) {
   // skills list
   const mySkills = {
-    javaScript: ["JavaScript", "Jquery", "Node", "Express", "React", "React Native", "Angular"],
+    javaScript: ["JavaScript", "Jquery", "Node", "Vue.js", "React", "React Native", "Angular"],
     ruby: ["Ruby", "Ruby on Rails"],
     html: ["HTML", "CSS", "Bootstrap"],
     dataBase: ["MySQL", "MongoDB", "PortgreSQL", "Firebase"],

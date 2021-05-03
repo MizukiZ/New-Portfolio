@@ -14,7 +14,7 @@ function Project({ screenHeight, headerOffSet }) {
         </div>
 
         <div className="sub-title mb-3">
-          Solo/Team projects I have done so far
+          Solo/Team projects
         </div>
 
         <div className="project-items-wrap">
@@ -22,7 +22,7 @@ function Project({ screenHeight, headerOffSet }) {
             <a href="https://github.com/MizukiZ/Mottainai">
               <img src="mottainai.jpg" alt="projectImg" />
               <p>
-                Two side market place application built on{" "}
+                Two side market place application using{" "}
                 <span>Ruby on Rails</span>.
               </p>
             </a>
@@ -32,7 +32,7 @@ function Project({ screenHeight, headerOffSet }) {
             <a href="https://github.com/MizukiZ/major-project-term3">
               <img src="tanto.jpg" alt="projectImg" />
               <p>
-                A store management application build on <span>React.js</span>{" "}
+                A store management application using <span>React.js</span>{" "}
                 for a real client (a knife shop)
               </p>
             </a>
@@ -48,20 +48,20 @@ function Project({ screenHeight, headerOffSet }) {
             </a>
           </div>
 
-          <div className="project-item mb-3">
+          {/* <div className="project-item mb-3">
             <a href="https://github.com/MizukiZ/CaveAdventure">
               <img src="caveAdventure.png" alt="projectImg" />
               <p>
-                Android maze game Build on <span>Unity</span>
+                Android maze game using <span>Unity</span>
               </p>
             </a>
-          </div>
+          </div> */}
 
           <div className="project-item mb-3">
             <a href="https://github.com/MizukiZ/RentMeProject">
               <img src="rentMeImage.jpg" alt="projectImg" />
               <p>
-                Renting market android application Build on{" "}
+                Renting market android application using{" "}
                 <span>Android studio</span>
               </p>
             </a>
@@ -71,8 +71,18 @@ function Project({ screenHeight, headerOffSet }) {
             <a href="https://github.com/MizukiZ/RentMeMVP">
               <img src="ccProject.png" alt="projectImg" />
               <p>
-                Currency converter application Build on{" "}
-                <span>React Native</span>
+                Currency converter application using{" "}
+                <span>React Native and Redux</span>
+              </p>
+            </a>
+          </div>
+
+          <div className="project-item mb-3">
+            <a href="https://github.com/MizukiZ/monster_farm_2_tool">
+              <img src="MF2ToolImg.png" alt="projectImg" />
+              <p>
+                Data vizualization tool of my favorite game using{" "}
+                <span>Ruby on Rails, Vue.js, Rspec and Docker</span>
               </p>
             </a>
           </div>
